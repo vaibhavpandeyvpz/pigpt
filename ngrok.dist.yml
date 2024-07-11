@@ -1,0 +1,13 @@
+version: 2
+
+authtoken: <auth token>
+
+region: eu
+
+tunnels:
+  pigpt:
+    proto: http
+    addr: 127.0.0.1:8000
+    # domain: <custom domain name>
+    schemes:
+      - https

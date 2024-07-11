@@ -1,0 +1,7 @@
+[
+  {
+    "type": "relay",
+    "name": "hall light",
+    "pin": 17
+  }
+]

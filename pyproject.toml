@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pigpt"
+version = "0.1.0"
+description = ""
+authors = ["Vaibhav Pandey <contact@vaibhavpandey.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0.3"
+openai = "^1.35.13"
+slack-sdk = "^3.31.0"
+gunicorn = "^22.0.0"
+gpiozero = "^2.0.1"
+python-dotenv = "^1.0.1"
+tiktoken = "^0.7.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
