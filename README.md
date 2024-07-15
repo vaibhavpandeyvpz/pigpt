@@ -30,7 +30,7 @@ sudo systemctl enable pigpiod
 sudo systemctl start pigpiod
 ```
 
-## Install
+## Development
 
 Clone the project and use below commands to setup the project locally for development:
 
