@@ -84,7 +84,7 @@ def events():
         cache[event_ts] = True
 
         bot_id = event.get("bot_id")
-        if event["type"] == "message" and bot_id is None:
+        if event["type"] == "message" and "text" in event and bot_id is None:
             channel = event["channel"]
             text = event["text"]
 

@@ -11,6 +11,9 @@ brew install pipx && pipx ensurepath
 
 # install poetry, if not already
 pipx install poetry
+
+# install rust (and Cargo)
+curl https://sh.rustup.rs -sSf | sh
 ```
 
 ## Install
