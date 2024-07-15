@@ -20,14 +20,6 @@ brew install pipx && pipx ensurepath
 
 # install poetry, if not already
 pipx install poetry
-
-# install rust (and Cargo)
-curl https://sh.rustup.rs -sSf | sh
-
-# install and enable pigpio service
-sudo apt install -y pigpio
-sudo systemctl enable pigpiod
-sudo systemctl start pigpiod
 ```
 
 ## Development
@@ -65,8 +57,17 @@ poetry run gunicorn pigpt.web:app
 To deploy to a device, connect over SSH to your favorite [Raspberry Pi](https://www.raspberrypi.org/) board and do the following:
 
 ```shell
+
+# install rust (and Cargo)
+curl https://sh.rustup.rs -sSf | sh
+
 # install Git and Supervisor
 sudo apt install -y git supervisor
+
+# install and enable pigpio service
+sudo apt install -y pigpio
+sudo systemctl enable pigpiod
+sudo systemctl start pigpiod
 
 # clone project from Github
 git clone https://github.com/vaibhavpandeyvpz/pigpt && cd pigpt
