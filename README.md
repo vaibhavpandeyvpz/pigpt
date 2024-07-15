@@ -1,6 +1,15 @@
 # pigpt
 
+Control and monitor eletrical appliances, machines and more with [OpenAI](https://openai.com/)'s [ChatGPT](https://openai.com/chatgpt/) + [Raspberry Pi](https://www.raspberrypi.org/). Expose conversation-to-action capabilities from interfaces e.g., [Slack](https://slack.com/intl/en-in/) messages, [WhatsApp](https://www.whatsapp.com/) chats (using [Wapper](https://github.com/vaibhavpandeyvpz/wapper)) etc.
+
+Uses [ngrok](https://ngrok.com/) too.
+
+![PiGPT Demo](demo.gif)
+
 ## Prepare
+
+Before setting up the project locally, few dependencies must be satisfied.
+Open a Terminal on your workstation and run below commands:
 
 ```shell
 # install ngrok, if not already
@@ -22,6 +31,8 @@ sudo systemctl start pigpiod
 ```
 
 ## Install
+
+Clone the project and use below commands to setup the project locally for development:
 
 ```shell
 # create ngrok config, ensure <auth token> is updated
@@ -48,6 +59,10 @@ echo MOCK_GPIO=true >> .env
 # start the web server
 poetry run gunicorn pigpt.web:app
 ```
+
+## Deployment
+
+To deploy to a device, connect over SSH to your favorite [Raspberry Pi](https://www.raspberrypi.org/) board and do the following:
 
 ```shell
 # install Git and Supervisor
@@ -83,4 +98,4 @@ sudo supervisorctl start all
 
 # Usage
 
-Go to Slack and chat with `PiGPT` application.
+Go to Slack, create an app from `slack.yml` manifest, enable **Messaging** and chat with the `PiGPT` application.
