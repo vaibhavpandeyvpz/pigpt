@@ -6,7 +6,7 @@ authors = ["Vaibhav Pandey <contact@vaibhavpandey.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 flask = "^3.0.3"
 openai = "^1.35.13"
 slack-sdk = "^3.31.0"
