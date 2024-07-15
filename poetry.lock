@@ -375,21 +375,6 @@ url = "https://www.piwheels.org/simple"
 reference = "piwheels"
 
 [[package]]
-name = "lgpio"
-version = "0.0.0.2"
-description = "Linux SBC GPIO module"
-optional = false
-python-versions = "*"
-files = [
-    {file = "lgpio-0.0.0.2-py3-none-any.whl", hash = "sha256:5f2d6a7324b96f867a44eceb03b14d314758b2dfe6e5882a46a3a9074048b8c2"},
-]
-
-[package.source]
-type = "legacy"
-url = "https://www.piwheels.org/simple"
-reference = "piwheels"
-
-[[package]]
 name = "markupsafe"
 version = "2.1.5"
 description = "Safely add untrusted strings to HTML/XML markup."
@@ -474,6 +459,21 @@ optional = false
 python-versions = ">=3.8"
 files = [
     {file = "pathspec-0.12.1-py3-none-any.whl", hash = "sha256:abdf2ccde2babf20f12de0f090074ebea14a544ece6a038e20fb5e000a30e869"},
+]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "pigpio"
+version = "1.78"
+description = "Raspberry Pi GPIO module"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pigpio-1.78-py2.py3-none-any.whl", hash = "sha256:81e46f640c4e6342881fa9bbe290dbcd4fc179619dc6591e57a9d4a084dc49fa"},
 ]
 
 [package.source]
@@ -770,4 +770,4 @@ reference = "piwheels"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "8535f475c7f340e530f2003b9a3727c747bee1abddeb21847ae3a60b028bb487"
+content-hash = "2e8b059f637534919128bbf9f0c50d06e1499866a1b415822219fb07ff97767c"

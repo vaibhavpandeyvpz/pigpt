@@ -14,6 +14,11 @@ pipx install poetry
 
 # install rust (and Cargo)
 curl https://sh.rustup.rs -sSf | sh
+
+# install and enable pigpio service
+sudo apt install -y pigpio
+sudo systemctl enable pigpiod
+sudo systemctl start pigpiod
 ```
 
 ## Install
